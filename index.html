@@ -6,6 +6,9 @@
     <title>Pin Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script>
+        var aCount = 3;
+    </script>
 </head>
 <body>
     <div class="container">
@@ -42,8 +45,9 @@
                                 <div class="button" onclick="number_clear()">C</div>
                             </div>
                             <div>
+                                <input type="hidden" id="countVal" value="3">
                                 <button type="submit" id="submitButton" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <p class="action-left" id="attempt-count">3 try left</p>
                             </div>
                     </div>
                 </div>
